@@ -1,5 +1,17 @@
 # Changelog
 
+### [0.18.2](https://github.com/WDaan/VueTorrent/compare/v0.18.1...v0.18.2) (2022-07-05)
+
+
+### Bug Fixes
+
+* connection password type [#456](https://github.com/WDaan/VueTorrent/issues/456) ([a8616cc](https://github.com/WDaan/VueTorrent/commit/a8616cce545ed579e39db9e64c0005a74eee63d5))
+
+
+### Improvements
+
+* Improved Ukrainian translation ([#457](https://github.com/WDaan/VueTorrent/issues/457)) ([b56a16f](https://github.com/WDaan/VueTorrent/commit/b56a16f7cebaf3b434f85c621b73e2d3e3385ba8))
+
 ### [0.18.1](https://github.com/WDaan/VueTorrent/compare/v0.18.0...v0.18.1) (2022-07-05)
 
 
