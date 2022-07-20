@@ -22,19 +22,31 @@
       color="download"
       :value="getDownload"
     />
-    <StorageCard :label="titleCase($t('uploaded'))" color="upload" :value="getUpload" />
+    <StorageCard
+      class="mb-4 mt-4"
+      :label="titleCase($t('uploaded'))"
+      color="upload"
+      :value="getUpload"
+    />
+    <StatCard
+      class="mb-4 mt-4"
+      :label="titleCase($t('ratio'))"
+      color="ratio"
+      :value="getRatio"
+    />
   </div>
 </template>
 
 <script>
 import { mdiInformationOutline } from '@mdi/js'
 import StorageCard from '@/components/Core/StorageCard'
+import StatCard from '@/components/Core/StatCard'
 // eslint-disable-next-line no-unused-vars
 import { titleCase } from '../../filters'
 
 export default {
   name: 'TransferStats',
-  components: { StorageCard },
+  components: { StorageCard, StatCard },
   props: ['status', 'session'],
   data: () => ({
     mdiInformationOutline,
@@ -53,6 +65,9 @@ export default {
     },
     getUpload() {
       return this.isSession ? this.status.sessionUploaded : this.status.alltimeUploaded
+    },
+    getRatio() {
+      return (this.getUpload / this.getDownload).toFixed(2)
     }
   },
   methods: {

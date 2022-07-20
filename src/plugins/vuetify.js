@@ -13,6 +13,7 @@ const variables = {
   secondary: '#3e556d',
   download: '#64CEAA',
   upload: '#00b3fa',
+  ratio: '#ef6942',
   // Torrent status colors
   'torrent-done': '#16573e',
   'torrent-downloading': '#5bb974',

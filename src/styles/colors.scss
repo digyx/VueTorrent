@@ -3,6 +3,7 @@ $primary: #35495e;
 $secondary: #3e556d;
 $download: #64CEAA;
 $upload: #00b3fa;
+$ratio: #ef6942;
 // Torrent status colors
 $torrent-done: #16573e;
 $torrent-downloading: #5bb974;
@@ -20,6 +21,7 @@ $torrent-moving: #ffaa2c;
   secondary: $secondary;
   download: $download;
   upload: $upload;
+  ratio: $ratio;
 
   torrent-done-color: $torrent-done;
   torrent-downloading-color: $torrent-downloading;
